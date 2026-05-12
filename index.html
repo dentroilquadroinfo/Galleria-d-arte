@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dentro il Quadro | Un viaggio dentro l'arte</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --gold: #d4af37; --bg: #1a1a1a; --card: #ffffff; }
+        body { background-color: var(--bg); margin: 0; font-family: 'Lato', sans-serif; color: white; }
+        
+        /* HEADER */
+        header { 
+            background: #432818; 
+            padding: 60px 20px; 
+            text-align: center; 
+            border-bottom: 5px solid var(--gold);
+        }
+        h1 { font-family: 'Playfair Display', serif; font-size: 3.5rem; margin: 0; color: white; letter-spacing: 1px; }
+        .subtitle { font-size: 1.3rem; color: var(--gold); margin: 15px 0 0; font-style: italic; font-weight: 300; }
+
+        /* GALLERIA */
+        .gallery { 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            gap: 40px; 
+            padding: 60px 20px; 
+        }
+        .card { 
+            background: var(--card); 
+            border-radius: 4px; 
+            overflow: hidden; 
+            width: 100%; 
+            max-width: 500px; 
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6); 
+            transition: transform 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .card:hover { transform: translateY(-10px); }
+        .card img { width: 100%; height: 280px; object-fit: cover; border-bottom: 3px solid var(--gold); }
+        .card-content { padding: 30px; text-align: center; color: #1a1a1a; }
+        .card-content h2 { font-family: 'Playfair Display', serif; margin: 0 0 20px; font-size: 2rem; color: #432818; }
+        
+        /* BOTTONI */
+        .btn { 
+            display: inline-block; 
+            padding: 14px 40px; 
+            background: #432818; 
+            color: var(--gold); 
+            text-decoration: none; 
+            border-radius: 2px; 
+            font-weight: bold; 
+            transition: 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border: 1px solid var(--gold);
+        }
+        .btn:hover { background: var(--gold); color: #432818; }
+
+        footer { text-align: center; padding: 40px; font-size: 0.8rem; opacity: 0.5; letter-spacing: 1px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Dentro il Quadro</h1>
+        <p class="subtitle">Oltre la cornice: un viaggio dentro l’arte</p>
+    </header>
+
+    <div class="gallery">
+        <div class="card">
+            <img src="hopper_totale.JPG" alt="Edward Hopper">
+            <div class="card-content">
+                <h2>Hopper</h2>
+                <a href="hopper.html" class="btn">Entra</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="turner_full.JPG" alt="William Turner">
+            <div class="card-content">
+                <h2>Turner</h2>
+                <h2>Esplora</h2>
+                <a href="turner.html" class="btn">Esplora</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="quadro.jpg.JPG" alt="Borrell del Caso">
+            <div class="card-content">
+                <h2>Borrell</h2>
+                <a href="borrell.html" class="btn">Guarda</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 DENTRO IL QUADRO | NAPOLI
+    </footer>
+
+</body>
+</html>
