@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oltre la Cornice - Galleria d'Arte Digitale</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #d35400; font-family: 'Lato', sans-serif; margin: 0; padding: 0; display: flex; flex-direction: column; align-items: center; min-height: 100vh; }
+        header { background-color: #a04000; color: white; padding: 60px 20px; text-align: center; border-bottom: 5px solid #8e3500; width: 100%; box-sizing: border-box; }
+        header h1 { font-family: 'Playfair Display', serif; margin: 0; font-size: 3.5em; letter-spacing: 2px; }
+        header p { font-size: 1.3em; opacity: 0.9; margin-top: 15px; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; padding: 60px 20px; max-width: 1200px; width: 100%; box-sizing: border-box; justify-items: center; }
+        .card { background: white; border-radius: 15px; box-shadow: 0 15px 40px rgba(0,0,0,0.3); overflow: hidden; transition: all 0.3s ease; display: flex; flex-direction: column; align-items: center; text-align: center; width: 320px; border: 1px solid #c5b39a; }
+        .card:hover { transform: translateY(-10px); box-shadow: 0 20px 50px rgba(0,0,0,0.4); }
+        .card img { width: 100%; height: 230px; object-fit: cover; }
+        .card-content { padding: 30px; width: 100%; box-sizing: border-box; }
+        .card h3 { font-family: 'Playfair Display', serif; margin: 0 0 15px; color: #2c3e50; font-size: 1.8em; }
+        .btn { display: inline-block; padding: 15px 30px; background-color: #d4a373; color: white; text-decoration: none; border-radius: 30px; font-weight: bold; font-size: 1.1em; transition: background 0.3s; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+        .btn:hover { background-color: #b5895e; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Oltre la Cornice</h1>
+    <p>La tua galleria d'arte digitale</p>
+</header>
+
+<div class="gallery-grid">
+
+    <div class="card">
+        <img src="hopper_totale.JPG" alt="Nighthawks di Edward Hopper">
+        <div class="card-content">
+            <h3>Hopper</h3>
+            <a href="hopper.html" class="btn">Entra</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="turner_full.JPG" alt="Rain, Steam, and Speed di William Turner">
+        <div class="card-content">
+            <h3>Turner</h3>
+            <a href="turner.html" class="btn">Esplora</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="quadro.jpg.JPG" alt="Escaping Criticism di Pere Borrell del Caso">
+        <div class="card-content">
+            <h3>Borrell</h3>
+            <a href="borrell.html" class="btn">Guarda</a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
