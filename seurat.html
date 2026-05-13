@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dentro il Quadro | Georges Seurat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Palette Chiara e Luminosa */
+        :root { 
+            --gold: #d4af37; 
+            --bg: #fdfaf1; /* Avorio chiaro */
+            --text: #2c3e50; 
+            --white: #ffffff; 
+            --accent: #f1c40f; /* Giallo solare */
+        }
+
+        body { 
+            background-color: var(--bg); 
+            color: var(--text); 
+            font-family: 'Lato', sans-serif; 
+            margin: 0; 
+            line-height: 1.8; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header { 
+            background: var(--white); 
+            padding: 80px 20px; 
+            text-align: center; 
+            border-bottom: 6px solid var(--accent); 
+            width: 100%;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        header h1 { 
+            font-family: 'Playfair Display', serif; 
+            font-size: 3rem; 
+            text-transform: uppercase; 
+            letter-spacing: 4px; 
+            margin: 0; 
+            color: var(--text);
+        }
+
+        .container { 
+            max-width: 900px; 
+            width: 100%;
+            margin: 40px auto; 
+            padding: 0 20px; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .section { 
+            background: var(--white); 
+            padding: 50px; 
+            margin-bottom: 40px; 
+            border-radius: 8px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+            border-left: 5px solid var(--accent); 
+            text-align: center; 
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        h2 { 
+            font-family: 'Playfair Display', serif; 
+            color: var(--text); 
+            font-size: 2.2rem; 
+            margin-bottom: 25px; 
+        }
+
+        .main-img { 
+            width: 100%; 
+            border-radius: 4px; 
+            margin: 20px 0; 
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1); 
+        }
+
+        .pixel-box {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px dashed var(--gold);
+            margin: 20px 0;
+        }
+
+        .detail-img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 8px;
+            margin: 20px auto;
+            display: block;
+            border: 3px solid var(--accent);
+        }
+
+        .btn-back { 
+            display: block; 
+            width: fit-content; 
+            margin: 50px auto; 
+            padding: 18px 50px; 
+            background: var(--text); 
+            color: var(--accent); 
+            text-decoration: none; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            letter-spacing: 2px; 
+            border-radius: 50px;
+            transition: 0.3s; 
+        }
+
+        .btn-back:hover { 
+            background: var(--accent); 
+            color: var(--text); 
+            transform: translateY(-3px);
+        }
+
+        .curiosity-label {
+            background: var(--accent);
+            color: var(--text);
+            padding: 5px 15px;
+            font-weight: bold;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            border-radius: 20px;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Una domenica pomeriggio alla Grande Jatte</h1>
+        <p>Il manifesto del Puntinismo di Georges Seurat</p>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <h2>L'Armonia della Scienza</h2>
+            <p>Completata nel 1886 dopo due anni di lavoro meticoloso, quest'opera monumentale segna la nascita del Neoimpressionismo. Seurat non mescola i colori sulla tavolozza, ma li accosta direttamente sulla tela.</p>
+            <img src="seraut_totale.JPG" class="main-img" alt="Opera Totale Seurat">
+            <p>Oltre 200 schizzi preparatori sono stati necessari per bilanciare le 48 figure umane in un parco calmo e quasi immobile, sulle rive della Senna.</p>
+        </div>
+
+        <div class="section">
+            <h2>Georges Seurat (1859-1891)</h2>
+            <p>Parigino purosangue, Seurat morì a soli 31 anni, ma rivoluzionò la pittura. Era un "pittore scienziato": studiava le leggi dell'ottica e della percezione visiva per dare alle sue tele una luminosità vibrante che il pennello tradizionale non poteva ottenere.</p>
+        </div>
+
+        <div class="section">
+            <span class="curiosity-label">L'Antenato dello Smartphone</span>
+            <h2>La Rivoluzione dei Pixel</h2>
+            <div class="pixel-box">
+                <img src="seurat_pixel.jpg" class="detail-img" alt="Dettaglio Puntinismo">
+                <p>Guarda questo dettaglio. Seurat ha inventato il concetto di <strong>Pixel</strong> oltre un secolo prima degli schermi digitali! Proprio come le foto sul tuo telefono sono fatte di milioni di puntini colorati che il cervello unisce in un'immagine fluida, Seurat usava il "Divisionismo" per far sì che fosse l'occhio dello spettatore a mescolare i colori.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <span class="curiosity-label">Curiosità</span>
+            <h2>Una Scimmia al Parco?</h2>
+            <img src="seurat_scimmia.jpg" class="detail-img" alt="Dettaglio Scimmia">
+            <p>Un dettaglio che spesso sfugge: in primo piano a destra, una donna elegante tiene al guinzaglio... una scimmietta! All'epoca, possedere animali esotici era un simbolo di status sociale altissimo, ma molti critici vedono in questo animale un tocco di ironia di Seurat verso le manie della borghesia parigina dell'epoca.</p>
+        </div>
+
+        <a href="index.html" class="btn-back">Torna alla Galleria</a>
+    </div>
+
+</body>
+</html>
