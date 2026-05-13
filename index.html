@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dentro il Quadro | Digital Art Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --gold: #d4af37; --bg: #1a1a1a; --card: #ffffff; --header-bg: #432818; }
+        body { background-color: var(--bg); margin: 0; font-family: 'Lato', sans-serif; color: white; overflow-x: hidden; }
+        header { background: var(--header-bg); padding: 80px 20px; text-align: center; border-bottom: 5px solid var(--gold); }
+        h1 { font-family: 'Playfair Display', serif; font-size: 3.5rem; margin: 0; color: white; letter-spacing: 2px; }
+        .subtitle { font-size: 1.4rem; color: var(--gold); margin: 15px 0 0; font-style: italic; font-weight: 300; }
+        .gallery { display: flex; flex-direction: column; align-items: center; gap: 50px; padding: 80px 20px; max-width: 1200px; margin: 0 auto; }
+        .card { background: var(--card); border-radius: 4px; overflow: hidden; width: 100%; max-width: 550px; box-shadow: 0 30px 60px rgba(0,0,0,0.7); transition: transform 0.4s ease; }
+        .card:hover { transform: translateY(-15px); }
+        .card img { width: 100%; height: 300px; object-fit: cover; border-bottom: 4px solid var(--gold); }
+        .card-content { padding: 40px; text-align: center; color: #1a1a1a; }
+        .card-content h2 { font-family: 'Playfair Display', serif; margin: 0 0 25px; font-size: 2.2rem; color: var(--header-bg); }
+        .btn { display: inline-block; padding: 16px 50px; background: var(--header-bg); color: var(--gold); text-decoration: none; border-radius: 2px; font-weight: bold; transition: 0.3s; text-transform: uppercase; letter-spacing: 2px; border: 1px solid var(--gold); }
+        .btn:hover { background: var(--gold); color: var(--header-bg); }
+        footer { background: #2c1a10; padding: 80px 20px; text-align: center; border-top: 2px solid var(--gold); }
+        .footer-title { color: var(--gold); font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 30px; }
+        .contact-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-bottom: 40px; }
+        .contact-btn { color: white; text-decoration: none; font-size: 1.1rem; border: 1px solid rgba(212, 175, 55, 0.5); padding: 12px 25px; border-radius: 4px; transition: 0.3s; }
+        .contact-btn:hover { border-color: var(--gold); background: rgba(212, 175, 55, 0.1); }
+        .contact-btn span { color: var(--gold); font-weight: bold; margin-right: 8px; }
+        .copyright { font-size: 0.8rem; opacity: 0.4; letter-spacing: 3px; color: white; text-transform: uppercase; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dentro il Quadro</h1>
+        <p class="subtitle">Oltre la cornice: un viaggio dentro l’arte</p>
+    </header>
+    <div class="gallery">
+        <div class="card"><img src="hopper_totale.JPG" alt="Hopper"><div class="card-content"><h2>Hopper</h2><a href="hopper.html" class="btn">Entra</a></div></div>
+        <div class="card"><img src="turner_full.JPG" alt="Turner"><div class="card-content"><h2>Turner</h2><a href="turner.html" class="btn">Esplora</a></div></div>
+        <div class="card"><img src="quadro.jpg.JPG" alt="Borrell"><div class="card-content"><h2>Borrell</h2><a href="borrell.html" class="btn">Guarda</a></div></div>
+        <div class="card"><img src="seurat_totale.JPG" alt="Seurat"><div class="card-content"><h2>Seurat</h2><a href="seurat.html" class="btn">Scopri</a></div></div>
+    </div>
+    <footer>
+        <p class="footer-title">Contatti & Social</p>
+        <div class="contact-links">
+            <a href="https://www.instagram.com/dentro.il.quadro/" target="_blank" class="contact-btn"><span>IG</span> @dentro.il.quadro</a>
+            <a href="mailto:dentroilquadroinfo@gmail.com" class="contact-btn"><span>MAIL</span> Scrivici</a>
+        </div>
+        <p class="copyright">&copy; 2026 DENTRO IL QUADRO | DIGITAL ART GALLERY</p>
+    </footer>
+</body>
+</html>
