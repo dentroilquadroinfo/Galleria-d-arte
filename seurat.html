@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Georges Seurat | Dentro il Quadro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { 
+            --grass-green: #4f7942; 
+            --water-blue: #7fb5b5; 
+            --sun-cream: #fdfcf0; 
+            --text-dark: #2c3e50; 
+            --accent-orange: #e67e22; 
+        }
+        body { background-color: var(--sun-cream); color: var(--text-dark); font-family: 'Lato', sans-serif; margin: 0; line-height: 1.8; }
+        
+        header { 
+            background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('seurat_totale.JPG'); 
+            background-size: cover; background-position: center; padding: 120px 20px; text-align: center; border-bottom: 5px solid var(--grass-green); 
+        }
+        header h1 { font-family: 'Playfair Display', serif; font-size: 4rem; color: var(--grass-green); margin: 0; letter-spacing: 5px; text-transform: uppercase; }
+        header p { font-style: italic; font-size: 1.5rem; margin-top: 15px; color: var(--accent-orange); font-weight: 700; }
+
+        .container { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
+        
+        .section { background: white; padding: 60px; margin-bottom: 40px; border-radius: 15px; box-shadow: 0 15px 35px rgba(79, 121, 66, 0.1); border-top: 5px solid var(--water-blue); }
+        
+        h2 { font-family: 'Playfair Display', serif; color: var(--grass-green); font-size: 2.5rem; margin-top: 0; }
+        
+        .art-img { width: 100%; border-radius: 8px; margin: 30px 0; border: 4px solid white; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .caption { font-size: 1rem; font-style: italic; text-align: center; color: #7f8c8d; margin-top: -20px; margin-bottom: 30px; }
+
+        .flex-box { display: flex; gap: 40px; align-items: center; flex-wrap: wrap; }
+        .flex-box img { width: 400px; border-radius: 50% 50% 0 0; border: 5px solid var(--sun-cream); outline: 2px solid var(--grass-green); }
+        .flex-text { flex: 1; min-width: 300px; }
+
+        .bio-card { background: var(--water-blue); color: white; padding: 40px; border-radius: 15px; margin: 40px 0; }
+        .bio-card h3 { font-family: 'Playfair Display', serif; margin-top: 0; font-size: 2rem; color: var(--sun-cream); }
+
+        .quote { border-left: 10px solid var(--accent-orange); padding: 30px; background: #fffcf0; margin: 50px 0; font-size: 1.6rem; font-family: 'Playfair Display', serif; font-style: italic; color: var(--grass-green); }
+
+        .footer-nav { text-align: center; margin: 80px 0; }
+        .btn-back { 
+            padding: 20px 60px; background: var(--grass-green); color: white; text-decoration: none; 
+            font-weight: bold; text-transform: uppercase; letter-spacing: 2px; border-radius: 50px; transition: 0.3s; 
+        }
+        .btn-back:hover { background: var(--accent-orange); transform: scale(1.1); }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Georges Seurat</h1>
+        <p>Atomi di luce e colori puri</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="section">
+            <div class="flex-box">
+                <img src="seurat_ritratto.JPG" alt="Ritratto di Seurat">
+                <div class="flex-text">
+                    <h2>L'Architetto della Visione</h2>
+                    <p>Mentre i suoi contemporanei cercavano l'istinto, Seurat cercava la **regola**. Per lui, dipingere era come comporre una sinfonia dove ogni punto di colore era una nota precisa, calcolata per risuonare nell'occhio di chi guarda.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="bio-card">
+                <h3>La Vita:
