@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Georges Seurat | Dentro il Quadro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --gold: #d4af37; --bg: #fdfcf0; --text: #2c1a10; --accent: #432818; }
+        body { background-color: var(--bg); color: var(--text); font-family: 'Lato', sans-serif; margin: 0; line-height: 1.8; }
+        .hero { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('seurat_totale.jpg'); background-size: cover; background-position: center; height: 70vh; display: flex; align-items: center; justify-content: center; border-bottom: 5px solid var(--gold); }
+        .hero h1 { font-family: 'Playfair Display', serif; font-size: 4rem; color: white; text-shadow: 3px 3px 15px rgba(0,0,0,0.6); text-transform: uppercase; letter-spacing: 5px; }
+        .container { max-width: 900px; margin: -60px auto 60px; padding: 0 20px; position: relative; }
+        .main-card { background: white; padding: 60px; border-radius: 4px; box-shadow: 0 30px 60px rgba(0,0,0,0.15); border-top: 8px solid var(--gold); }
+        h2 { font-family: 'Playfair Display', serif; color: var(--accent); font-size: 2.2rem; margin-top: 50px; border-left: 4px solid var(--gold); padding-left: 20px; }
+        .highlight { color: #b5895e; font-weight: 700; }
+        .art-img { width: 100%; border-radius: 2px; margin: 40px 0; box-shadow: 0 15px 30px rgba(0,0,0,0.1); border: 1px solid #eee; }
+        .caption { font-size: 0.95rem; font-style: italic; text-align: center; color: #666; margin-top: -30px; margin-bottom: 40px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
+        .flex-box { display: flex; gap: 30px; align-items: flex-start; margin: 40px 0; flex-wrap: wrap; }
+        .flex-box img { width: 300px; border-radius: 4px; box-shadow: 10px 10px 0px var(--gold); }
+        .flex-text { flex: 1; min-width: 300px; }
+        .quote { background: #fdfcf0; padding: 40px; border-radius: 0 40px 0 40px; border: 1px solid var(--gold); font-style: italic; font-size: 1.3rem; margin: 50px 0; position: relative; text-align: center; }
+        .bio-box { background: #432818; color: white; padding: 40px; border-radius: 4px; margin: 40px 0; }
+        .bio-box h3 { font-family: 'Playfair Display', serif; color: var(--gold); margin-top: 0; }
+        .footer-nav { text-align: center; margin-top: 80px; }
+        .btn-back { padding: 20px 50px; border: 2px solid var(--accent); text-decoration: none; color: var(--accent); font-weight: bold; text-transform: uppercase; letter-spacing: 2px; transition: 0.3s; }
+        .btn-back:hover { background: var(--accent); color: var(--gold); }
+    </style>
+</head>
+<body>
+    <div class="hero"><h1>Georges Seurat</h1></div>
+    <div class="container">
+        <div class="main-card">
+            
+            <div class="flex-box">
+                <img src="seurat_ritratto.jpg" alt="Georges Seurat">
+                <div class="flex-text">
+                    <h2>L'Architetto del Colore</h2>
+                    <p>Georges Seurat non era un semplice pittore; era un teorico della visione. In un'epoca dominata dall'istinto degli Impressionisti, lui scelse la <span class="highlight">rigida disciplina della scienza</span>. Ogni suo colpo di pennello era una decisione calcolata per manipolare la luce e la percezione dell'osservatore.</p>
+                </div>
+            </div>
+
+            <div class="bio-box">
+                <h3>Oltre la Tela: La Vita di Seurat (1859-1891)</h3>
+                <p>Nato a Parigi nel cuore della borghesia, Seurat mostrò subito un temperamento solitario e metodico. Dopo gli studi classici, si allontanò dai canoni accademici per immergersi nei trattati di fisica e ottica. La sua carriera fu fulminea: a soli 26 anni espose "Una domenica pomeriggio all'isola della Grande-Jatte", scatenando uno scandalo. <br><br>Era un lavoratore instancabile; si dice che passasse le notti intere a studiare la luce artificiale. La sua morte a 31 anni rimane una delle più grandi perdite della storia dell'arte: in una decade ha creato un linguaggio visivo che oggi, nell'era digitale, appare profetico.</p>
+            </div>
+
+            <h2>Il Puntinismo: Una Rivoluzione Silenziosa</h2>
+            <img src="seurat_pixel.jpg" class="art-img" alt="Tecnica Puntinista">
+            <p class="caption">Dettaglio macro: migliaia di atomi cromatici che si fondono nel tuo occhio.</p>
+            <p>Seurat rifiutava di mescolare i colori sulla tavolozza. Sosteneva che la materia pittorica mescolata diventasse "sporca" e perdesse vibrazione. Inventò quindi il **Divisionismo** (o Puntinismo): accostare puntini di colore puro direttamente sulla tela. <br><br>È la <span class="highlight">miscela ottica</span>: il giallo e il blu non si uniscono nel tubetto, ma sulla tua retina, creando un verde molto più brillante di quanto qualsiasi pennellata tradizionale possa mai fare.</p>
+
+            <div class="quote">
+                "L'arte è armonia. L'armonia è l'analogia dei contrari, l'analogia dei simili, di tono, di tinta, di linea."
+            </div>
+
+            <h2>La Grande-Jatte: Un Fermo Immagine Eterno</h2>
+            <p>L'opera rappresenta la borghesia parigina in un momento di svago, ma non c'è nulla di casuale. Le figure sono rigide, quasi scultoree, disposte secondo un ordine matematico. È una critica alla monotonia della vita moderna o una celebrazione dell'ordine universale? Seurat ci lascia nel dubbio, immersi in una luce che sembra pulsare.</p>
+
+            <h2>Simbolismo e Ironia</h2>
+            <img src="seurat_scimmia.jpg" class="art-img" alt="La Scimmia di Seurat">
+            <p class="caption">Enigmatica e provocatoria: la scimmia è il centro del disordine calcolato di Seurat.</p>
+            <p>Non farti ingannare dal rigore. Seurat amava i contrasti. La presenza della <span class="highlight">scimmia al guinzaglio</span> non è solo un dettaglio pittoresco: all'epoca rappresentava la lussuria o la natura selvaggia "addomesticata" dalla facciata borghese. È il colpo di scena che rende il quadro vivo e profondamente umano.</p>
+
+            <div class="footer-nav">
+                <a href="index.html" class="btn-back">Torna alla Galleria</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
