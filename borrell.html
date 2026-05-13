@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pere Borrell del Caso | Oltre la Cornice</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Palette Nero e Oro */
+        :root { 
+            --gold: #d4af37; 
+            --bg: #1a1a1a; /* Sfondo Nero */
+            --text: #f0f0f0; 
+            --white: #262626; /* Nero più chiaro per le sezioni */
+            --header: #000000; 
+        }
+
+        body { 
+            background-color: var(--bg); 
+            color: var(--text); 
+            font-family: 'Lato', sans-serif; 
+            margin: 0; 
+            line-height: 1.8; 
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centra tutto il body */
+        }
+
+        header { 
+            background: var(--header); 
+            padding: 80px 20px; 
+            text-align: center; 
+            border-bottom: 8px solid var(--gold); 
+            color: white; 
+            width: 100%;
+        }
+
+        header h1 { 
+            font-family: 'Playfair Display', serif; 
+            font-size: 3.5rem; 
+            text-transform: uppercase; 
+            letter-spacing: 4px; 
+            margin: 0; 
+            color: var(--gold); /* Titolo in Oro */
+        }
+
+        .container { 
+            max-width: 1000px; 
+            width: 100%;
+            margin: 40px auto; 
+            padding: 0 20px; 
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centra il contenuto del container */
+        }
+
+        .section { 
+            background: var(--white); 
+            padding: 50px; 
+            margin-bottom: 40px; 
+            border-radius: 4px; 
+            box-shadow: 0 15px 30px rgba(0,0,0,0.5); 
+            border-top: 4px solid var(--gold); 
+            text-align: center; /* Centra il testo nelle sezioni */
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        h2 { 
+            font-family: 'Playfair Display', serif; 
+            color: var(--gold); 
+            font-size: 2.5rem; 
+            margin-bottom: 30px; 
+        }
+
+        .art-img { 
+            max-width: 100%; 
+            height: auto;
+            border-radius: 2px; 
+            margin: 30px auto; 
+            display: block; /* Necessario per il centering con margin auto */
+            box-shadow: 0 10px 20px rgba(0,0,0,0.4); 
+            border: 1px solid var(--gold); 
+        }
+        
+        .details-grid { 
+            display: flex; 
+            gap: 20px; 
+            margin-top: 30px; 
+            flex-wrap: wrap; 
+            justify-content: center; /* Centra gli elementi della griglia */
+        }
+
+        .detail-item { 
+            flex: 1; 
+            min-width: 300px; 
+            text-align: center; 
+        }
+
+        .detail-item img { 
+            width: 100%; 
+            max-width: 400px;
+            border-radius: 4px; 
+            border: 4px solid var(--gold); 
+        }
+
+        .detail-item p { 
+            font-style: italic; 
+            margin-top: 10px; 
+            color: var(--gold); 
+        }
+
+        .bio-text { font-size: 1.1rem; margin-bottom: 30px; color: #ccc; }
+
+        .btn-back { 
+            display: block; 
+            width: fit-content; 
+            margin: 60px auto; 
+            padding: 20px 60px; 
+            background: var(--header); 
+            color: var(--gold); 
+            text-decoration: none; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            letter-spacing: 2px; 
+            border: 2px solid var(--gold); 
+            transition: 0.3s; 
+        }
+
+        .btn-back:hover { 
+            background: var(--gold); 
+            color: var(--header); 
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Pere Borrell del Caso</h1>
+        <p>Il maestro del Trompe-l'œil e dell'illusione</p>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <h2>L'Evasione dall'Accademismo</h2>
+            <div class="bio-text">
+                <p>Pere Borrell del Caso (1835–1910) è stato un pittore spagnolo celebre per la sua maestria nel <i>Trompe-l'œil</i>, la tecnica di "ingannare l'occhio". Rifiutò per ben due volte la cattedra alla Scuola di Belle Arti di Barcellona per fondare la propria accademia indipendente, promuovendo una visione dell'arte libera dai dogmi istituzionali.</p>
+            </div>
+            
+            <h2>Fuggendo dalla Critica (1874)</h2>
+            <p>Questo capolavoro non è solo un dipinto, ma una sfida visiva. Rappresenta un giovane che tenta letteralmente di scavalcare la cornice del quadro per fuggire nel mondo reale.</p>
+            
+            <img src="quadro.jpg.JPG" class="art-img" alt="Fuggendo dalla Critica - Opera Completa">
+            
+            <p>La tecnica del pittore rompe il confine tra lo spazio dell'osservatore e quello dell'opera. Notate come la luce e le ombre creano una profondità tale da rendere l'illusione quasi tangibile.</p>
+        </div>
+
+        <div class="section">
+            <h2>Dettagli dell'Illusione</h2>
+            <p>La forza di quest'opera risiede nei dettagli anatomici che accentuano il movimento di "uscita" dalla tela.</p>
+            
+            <div class="details-grid">
+                <div class="detail-item">
+                    <img src="mano.jpg.JPG" alt="Dettaglio Mano">
+                    <p>La mano che afferra la cornice esterna, mostrando la tensione del movimento.</p>
+                </div>
+                <div class="detail-item">
+                    <img src="piede.jpg.JPG" alt="Dettaglio Piede">
+                    <p>Il piede che scavalca il bordo inferiore, completando l'inganno ottico.</p>
+                </div>
+            </div>
+        </div>
+
+        <a href="index.html" class="btn-back">Torna alla Galleria</a>
+    </div>
+
+</body>
+</html>
