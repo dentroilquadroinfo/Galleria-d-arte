@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edward Hopper | Oltre il Silenzio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --gold: #d4af37; --bg: #fdfcf0; --text: #2c3e50; --white: #ffffff; --header: #432818; }
+        body { background-color: var(--bg); color: var(--text); font-family: 'Lato', sans-serif; margin: 0; line-height: 1.8; }
+        header { background: var(--header); padding: 80px 20px; text-align: center; border-bottom: 8px solid var(--gold); color: white; }
+        header h1 { font-family: 'Playfair Display', serif; font-size: 3.5rem; text-transform: uppercase; letter-spacing: 4px; margin: 0; }
+        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+        .section { background: var(--white); padding: 50px; margin-bottom: 40px; border-radius: 4px; box-shadow: 0 15px 30px rgba(0,0,0,0.05); border-top: 4px solid var(--gold); }
+        h2 { font-family: 'Playfair Display', serif; color: var(--header); font-size: 2.2rem; text-align: center; }
+        .art-img { width: 100%; border-radius: 2px; margin: 30px 0; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .bio-box { display: flex; gap: 40px; align-items: flex-start; flex-wrap: wrap; }
+        .bio-box img { width: 280px; border: 1px solid #ddd; padding: 10px; background: white; }
+        .bio-text { flex: 1; min-width: 300px; }
+        .btn-back { display: block; width: fit-content; margin: 50px auto; padding: 18px 50px; background: var(--header); color: var(--gold); text-decoration: none; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; border: 1px solid var(--gold); transition: 0.3s; }
+        .btn-back:hover { background: var(--gold); color: var(--header); }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Edward Hopper</h1>
+        <p>Il pittore della solitudine urbana</p>
+    </header>
+    <div class="container">
+        <div class="section">
+            <div class="bio-box">
+                <img src="hopper_ritratto.jpg" alt="Hopper">
+                <div class="bio-text">
+                    <h2>L'Anima del Silenzio</h2>
+                    <p>Edward Hopper (1882-1967) è stato il maestro del realismo americano. Le sue opere catturano momenti di attesa, solitudine e silenzio nelle città moderne, trasformando distributori di benzina, uffici e tavole calde in palcoscenici metafisici.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Nighthawks (I Nottambuli)</h2>
+            <img src="hopper_totale.JPG" class="art-img" alt="Nighthawks">
+            <p>In questo suo capolavoro più celebre, Hopper congela un istante di vita notturna. La luce fredda del neon separa gli avventori dal buio esterno, creando una sensazione di isolamento condiviso che definisce l'esperienza moderna.</p>
+        </div>
+        <a href="index.html" class="btn-back">Torna alla Galleria</a>
+    </div>
+</body>
+</html>
