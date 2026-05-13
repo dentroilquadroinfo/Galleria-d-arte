@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Georges Seurat | Dentro il Quadro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --gold: #d4af37; --bg: #1a1a1a; --text: #ffffff; --card-bg: #262626; }
+        body { background-color: var(--bg); color: var(--text); font-family: 'Lato', sans-serif; margin: 0; line-height: 1.8; }
+        
+        header { background: #000; padding: 100px 20px; text-align: center; border-bottom: 3px solid var(--gold); }
+        header h1 { font-family: 'Playfair Display', serif; font-size: 4rem; color: var(--gold); margin: 0; letter-spacing: 5px; text-transform: uppercase; }
+        header p { font-style: italic; font-size: 1.5rem; margin-top: 20px; color: #ccc; }
+
+        .container { max-width: 1100px; margin: 50px auto; padding: 0 20px; }
+        
+        .section { background: var(--card-bg); padding: 60px; margin-bottom: 50px; border-radius: 4px; border-left: 5px solid var(--gold); box-shadow: 0 20px 40px rgba(0,0,0,0.5); }
+        
+        h2 { font-family: 'Playfair Display', serif; color: var(--gold); font-size: 2.5rem; margin-top: 0; margin-bottom: 30px; }
+        
+        .art-img { width: 100%; border-radius: 2px; margin: 30px 0; border: 1px solid #444; }
+        .caption { font-size: 1rem; font-style: italic; text-align: center; color: #aaa; margin-top: -20px; margin-bottom: 30px; }
+
+        .flex-box { display: flex; gap: 40px; align-items: center; flex-wrap: wrap; }
+        .flex-box img { width: 400px; border-radius: 4px; border: 2px solid var(--gold); }
+        .flex-text { flex: 1; min-width: 300px; }
+
+        .bio-highlight { background: #333; padding: 40px; border-radius: 8px; border: 1px solid var(--gold); margin: 40px 0; }
+        .bio-highlight h3 { color: var(--gold); font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-top: 0; }
+
+        .quote { border-top: 2px solid var(--gold); border-bottom: 2px solid var(--gold); padding: 40px 0; margin: 60px 0; text-align: center; font-size: 1.8rem; font-family: 'Playfair Display', serif; font-style: italic; color: #eee; }
+
+        .footer-nav { text-align: center; margin: 80px 0; }
+        .btn-back { padding: 20px 60px; background: transparent; color: var(--gold); text-decoration: none; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; border: 2px solid var(--gold); transition: 0.3s; }
+        .btn-back:hover { background: var(--gold); color: #000; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Georges Seurat</h1>
+        <p>Il Genio che inventò i Pixel</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="section">
+            <div class="flex-box">
+                <img src="seurat_ritratto.JPG" alt="Ritratto di Seurat">
+                <div class="flex-text">
+                    <h2>L'Architetto della Visione</h2>
+                    <p>Georges Seurat non era un semplice pittore; era un teorico del colore. Mentre gli altri inseguivano l'attimo, lui cercava l'eterno attraverso la precisione matematica. La sua tecnica ha trasformato l'arte in una scienza esatta.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="bio-highlight">
+                <h3>Oltre la Tela: La Vita di Seurat (1859-1891)</h3>
+                <p>Nato a Parigi da una famiglia agiata, Seurat fu un lavoratore instancabile e metodico. Dopo gli studi classici, si immerse nei trattati di ottica, convinto che la bellezza potesse essere spiegata tramite la fisica. <br><br>Passava intere giornate a studiare la luce e mesi chiusi in studio per completare una singola opera. La sua morte improvvisa a soli 31 anni ha stroncato una delle carriere più innovative della storia, lasciando un'eredità che ancora oggi influenza il mondo digitale.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Il Metodo Puntinista</h2>
+            <img src="seurat_pixel.jpg" class="art-img" alt="Dettaglio Tecnica">
+            <p class="caption">Migliaia di punti di colore puro che si fondono solo negli occhi dell'osservatore.</p>
+            <p>Seurat inventò il **Divisionismo**: rifiutava di mescolare i pigmenti sulla tavolozza perché credeva che perdessero luminosità. Invece, accostava puntini di colori complementari. <br><br>È la **miscela ottica**: il giallo e il blu non si uniscono sulla tela, ma sulla tua retina, creando un verde incredibilmente brillante. È lo stesso principio che permette ai moderni schermi di visualizzare miliardi di colori.</p>
+        </div>
+
+        <div class="quote">
+            "L'arte è armonia. L'armonia è l'analogia dei contrari, l'analogia dei simili, di tono, di tinta, di linea."
+        </div>
+
+        <div class="section">
+            <h2>Un Pomeriggio Eterno</h2>
+            <img src="seurat_totale.JPG" class="art-img" alt="Grande-Jatte Totale">
+            <p class="caption">"Una domenica pomeriggio all'isola della Grande-Jatte" - Il capolavoro di Seurat.</p>
+            <p>In quest'opera monumentale, Seurat congela il tempo. Le figure sono rigide e solenni, disposte con una precisione architettonica. È un silenzio visivo che nasconde una vibrazione cromatica infinita.</p>
+        </div>
+
+        <div class="section">
+            <h2>Il Mistero della Scimmia</h2>
+            <div class="flex-box">
+                <div class="flex-text">
+                    <p>Nel cuore di questo ordine borghese, Seurat inserisce un tocco provocatorio: una scimmia al guinzaglio. All'epoca, la scimmia era simbolo di lussuria o di comportamento sregolato, un contrasto ironico con la rigidità delle figure circostanti.</p>
+                </div>
+                <img src="seurat_scimmia.jpg" alt="Dettaglio Scimmia" style="width: 300px;">
+            </div>
+        </div>
+
+        <div class="footer-nav">
+            <a href="index.html" class="btn-back">Torna alla Galleria</a>
+        </div>
+    </div>
+
+</body>
+</html>
