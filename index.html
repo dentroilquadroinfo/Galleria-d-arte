@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisi Critica | La Notte Stellata di Van Gogh</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { 
+            --deep-blue: #020c1b; 
+            --gold: #d4af37; 
+            --sky: #5dade2;
+            --cream: #f4f4f4; 
+        }
+
+        body { 
+            background-color: var(--deep-blue); 
+            color: var(--cream); 
+            font-family: 'Lato', sans-serif; 
+            margin: 0; 
+            line-height: 1.9;
+        }
+
+        /* Hero Immersiva - CORRETTA PER CENTRATURA */
+        .hero {
+            height: 90vh;
+            background: linear-gradient(rgba(2, 12, 27, 0.5), rgba(2, 12, 27, 0.7)), url('vangogh_totale.JPG');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center; /* Forza la centratura del testo */
+            animation: breathe 15s ease-in-out infinite;
+            border-bottom: 1px solid var(--gold);
+            padding: 0 20px; /* Evita che il testo tocchi i bordi */
+        }
+
+        @keyframes breathe {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+        }
+
+        .hero h1 { 
+            font-family: 'Playfair Display', serif; 
+            font-size: clamp(2.5rem, 8vw, 4.5rem); /* Si adatta alla grandezza dello schermo */
+            color: var(--gold);
+            margin: 20px 0;
+            letter-spacing: 8px; /* Ridotto leggermente per centratura */
+            text-transform: uppercase;
+            text-shadow: 0 10px 30px rgba(0,0,0,0.8);
+            line-height: 1.1;
+            max-width: 900px; /* Limita la larghezza per non farlo "scappare" */
+        }
+
+        .hero p {
+            margin: 5px 0;
+            max-width: 800px;
+        }
+
+        .container { max-width: 1000px; margin: -100px auto 100px; padding: 0 30px; position: relative; z-index: 5; }
+
+        .essay-card { 
+            background: rgba(2, 12, 27, 0.85); /* Leggermente più scuro per leggibilità */
+            backdrop-filter: blur(20px);
+            padding: 80px; 
+            border-radius: 4px; 
+            box-shadow: 0 50px 100px rgba(0,0,0,0.5);
+            border: 1px solid rgba(212, 175, 55, 0.1);
+        }
+
+        h2 { font-family: 'Playfair Display', serif; color: var(--gold); font-size: 2.8rem; margin: 60px 0 30px; border-bottom: 1px solid rgba(212, 175, 55, 0.3); padding-bottom: 15px; }
+        h3 { font-family: 'Playfair Display', serif; color: var(--sky); font-size: 1.8rem; margin-top: 40px; }
+
+        .dropcap { float: left; font-size: 5rem; line-height: 1; font-family: 'Playfair Display', serif; margin-right: 15px; color: var(--gold); }
+
+        .img-box { margin: 50px 0; border: 1px solid var(--gold); padding: 10px; background: #000; }
+        .img-box img { width: 100%; display: block; opacity: 0.9; transition: 0.5s; }
+        .img-box img:hover { opacity: 1; }
+        .img-caption { font-size: 0.9rem; color: var(--gold); text-align: center; margin-top: 15px; font-style: italic; letter-spacing: 1px; }
+
+        .quote-block {
+            margin: 60px 0;
+            padding: 40px;
+            border-left: 2px solid var(--gold);
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            font-style: italic;
+            background: rgba(212, 175, 55, 0.05);
+        }
+
+        .grid-analysis { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; }
+
+        .portrait-circle {
+            width: 250px; height: 250px;
+            border-radius: 50%;
+            border: 2px solid var(--gold);
+            margin: 0 auto 30px;
+            overflow: hidden;
+        }
+        .portrait-circle img { width: 100%; height: 100%; object-fit: cover; }
+
+        .btn-footer {
+            display: inline-block; margin-top: 80px; padding: 20px 60px;
+            border: 1px solid var(--gold); color: var(--gold);
+            text-decoration: none; text-transform: uppercase; letter-spacing: 5px;
+            transition: 0.4s;
+        }
+        .btn-footer:hover { background: var(--gold); color: #000; font-weight: bold; }
+
+        @media (max-width: 768px) {
+            .essay-card { padding: 40px 20px; }
+            .grid-analysis { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 2.8rem; letter-spacing: 4px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <p style="letter-spacing: 5px; color: var(--gold); text-transform: uppercase; font-weight: bold;">Studio Monografico</p>
+        <h1>Starry Night</h1>
+        <p style="font-style: italic; font-size: 1.2rem;">Saint-Rémy-de-Provence, 1889</p>
+    </div>
+
+    <div class="container">
+        <div class="essay-card">
+            
+            <p><span class="dropcap">L</span>a "Notte Stellata" non rappresenta semplicemente un paesaggio notturno; essa costituisce il testamento visivo di una mente che percepisce la realtà come un flusso incessante di energia. Dipinta durante il ricovero di Vincent van Gogh presso l'istituto di Saint-Paul-de-Mausole, l'opera trascende l'impressionismo per approdare a un espressionismo simbolico senza precedenti.</p>
+
+            <h2>1. La Turbolenza come Linguaggio</h2>
+            <p>Al centro della composizione domina un immenso vortice celeste. Ciò che un tempo veniva interpretato solo come un segno di instabilità mentale, oggi è oggetto di studi fisici: Van Gogh è riuscito a rappresentare la <strong>turbolenza dei fluidi</strong>, uno dei concetti più complessi della meccanica classica, decenni prima che venisse formulato matematicamente.</p>
+            
+            <div class="img-box">
+                <img src="vangogh_vortice.jpg" alt="Analisi del vortice">
+                <div class="img-caption">Dettaglio del dinamismo barocentrico nel nucleo stellare.</div>
+            </div>
+
+            <h2>2. Simbolismo e Dualità</h2>
+            <div class="grid-analysis">
+                <div>
+                    <h3>Il Cipresso</h3>
+                    <p>L'imponente figura oscura in primo piano funge da <em>axis mundi</em>, un ponte verticale che connette il piano terrestre (il villaggio) con quello celeste (l'infinito). La sua forma fiammeggiante evoca la tensione spirituale dell'artista verso l'assoluto.</p>
+                </div>
+                <div>
+                    <h3>Il Villaggio</h3>
+                    <p>In netto contrasto con il tumulto del cielo, il villaggio è reso con linee rette e pacate. Questo borgo, ispirato ai ricordi dell'infanzia olandese, rappresenta l'ordine umano e la stabilità che Vincent sentiva ormai perduti.</p>
+                </div>
+            </div>
+
+            <div class="quote-block">
+                "Guardare le stelle mi fa sempre sognare, così come lo fanno i puntini neri che rappresentano le città sulle mappe. Perché, mi chiedo, i punti luminosi del cielo non dovrebbero essere accessibili quanto i puntini neri sulla carta di Francia?"
+            </div>
+
+            <h2>3. L'Uomo e l'Universo</h2>
+            <div style="text-align: center; margin-top: 60px;">
+                <div class="portrait-circle">
+                    <img src="vangogh_ritratto.JPG" alt="Autoritratto di Vincent Van Gogh">
+                </div>
+                <h3>L'autoritratto come specchio cosmico</h3>
+                <p>Nell'autoritratto del medesimo periodo, osserviamo la medesima tecnica esecutiva: pennellate brevi, ritmiche e ondulate che sembrano far vibrare la materia stessa. Non vi è distinzione tra l'uomo e il cosmo; entrambi sono fatti della stessa sostanza vibrante e tormentata.</p>
+            </div>
+
+            <h2>4. Teoria Cromatica</h2>
+            <p>L'uso dei colori complementari (il blu oltremare e il giallo cromo) non è casuale. Van Gogh sfrutta il contrasto simultaneo per generare una luminosità che sembra emanare dalla tela stessa. Le undici stelle, cariche di impasto, fungono da sorgenti luminose indipendenti che frammentano l'oscurità notturna.</p>
+
+            <div style="text-align: center;">
+                <a href="index.html" class="btn-footer">Torna alla Collezione</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
