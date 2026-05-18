@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turner | Analisi Critica Istituzionale</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root { --gold: #c5a059; --fire: #e67e22; --black: #050505; }
+        body { background: var(--black); color: #f0f0f0; font-family: 'Lora', serif; margin: 0; line-height: 2.2; }
+        
+        /* Hero Imponente */
+        .hero { height: 100vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('conti_totale.JPG') center/cover fixed; display: flex; align-items: center; justify-content: center; text-align: center; }
+        .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(3rem, 10vw, 7rem); color: var(--gold); letter-spacing: 10px; text-transform: uppercase; margin: 0; }
+        
+        .main-content { max-width: 900px; margin: 0 auto; padding: 150px 20px; }
+
+        .abstract { font-size: 1.5rem; color: var(--gold); font-style: italic; margin-bottom: 100px; line-height: 1.6; text-align: center; }
+
+        .dropcap { float: left; font-family: 'Playfair Display', serif; font-size: 8rem; line-height: 0.7; margin: 20px 25px 0 0; color: var(--fire); }
+
+        h2 { font-family: 'Playfair Display', serif; font-size: 3.5rem; margin: 120px 0 60px; color: var(--gold); border-bottom: 1px solid rgba(197, 160, 89, 0.3); padding-bottom: 20px; }
+        
+        .detail-block { margin: 100px 0; }
+        .detail-block img { width: 100%; border: 1px solid rgba(197, 160, 89, 0.2); padding: 10px; background: #000; margin-bottom: 30px; }
+        .detail-title { font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--fire); margin-bottom: 20px; display: block; }
+
+        .technical-analysis { background: rgba(197, 160, 89, 0.05); padding: 60px; border-left: 4px solid var(--gold); margin: 80px 0; font-size: 1.1rem; }
+
+        blockquote { font-family: 'Playfair Display', serif; font-size: 2.5rem; color: var(--gold); text-align: center; margin: 120px 0; font-style: italic; position: relative; }
+        blockquote::before { content: '"'; font-size: 10rem; position: absolute; top: -80px; left: 50%; transform: translateX(-50%); opacity: 0.1; }
+
+        .footer-nav { margin-top: 150px; text-align: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 80px; }
+        .btn-back { border: 1px solid var(--gold); color: var(--gold); padding: 20px 60px; text-decoration: none; letter-spacing: 5px; text-transform: uppercase; transition: 0.5s; }
+        .btn-back:hover { background: var(--gold); color: #000; }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <h1>TURNER</h1>
+    </section>
+
+    <main class="main-content">
+        <p class="abstract">"L'incendio delle Case dei Lord e dei Comuni" non è un documento storico, ma una riflessione filosofica sull'impotenza della civiltà davanti all'infinito.</p>
+
+        <section>
+            <p><span class="dropcap">N</span>ella notte del 16 ottobre 1834, Londra divenne il palcoscenico di una catastrofe sublime. William Turner, il "pittore della luce", non rimase al sicuro nella sua dimora. Si imbarcò sul Tamigi, avvicinandosi il più possibile alle fiamme ruggenti che stavano divorando il cuore politico dell'Impero Britannico. Ciò che emerse da quell'esperienza non fu un resoconto giornalistico, ma un capolavoro che avrebbe scosso le fondamenta dell'estetica romantica, introducendo il concetto di luce come forza distruttrice e creatrice al tempo stesso.</p>
+        </section>
+
+        <h2>L'Alchimia del Colore</h2>
+        <div class="detail-block">
+            <span class="detail-title">I. Il Vortice Celeste</span>
+            <img src="conti_cielo.jpg" alt="Dettaglio del cielo">
+            <p>La porzione superiore del dipinto rivela la vera rivoluzione di Turner. Qui, il cielo cessa di essere atmosfera e diventa materia incandescente. L'artista utilizza il <strong>Giallo di Cromo</strong>, un pigmento allora innovativo, per creare una luminosità che sembra emanare calore fisico. Le pennellate sono rapide, circolari, quasi furiose; Turner non descrive il fumo, lo "evoca" attraverso la vibrazione cromatica. Questa tecnica anticipa di quasi un secolo l'espressionismo astratto, riducendo l'architettura del Parlamento a un semplice scheletro divorato dalla luce.</p>
+        </div>
+
+        <div class="technical-analysis">
+            <strong>Nota Tecnica:</strong> Turner applica il colore "impastato" con la spatola e le dita, creando una texture tridimensionale. La sua capacità di rendere la rifrazione della luce attraverso il fumo è frutto di anni di studi scientifici sull'ottica di Newton e Goethe.
+        </div>
+
+        <h2>Il Riflesso: L'Incontro degli Elementi</h2>
+        <div class="detail-block">
+            <span class="detail-title">II. Oro Liquido sul Tamigi</span>
+            <img src="conti_acqua.jpg" alt="Dettaglio del riflesso">
+            <p>In basso, il Tamigi smette di essere acqua e diventa uno specchio di oro fuso. Il contrasto tra le tonalità fredde del blu di Prussia della notte e il calore accecante delle fiamme crea una tensione visiva insopportabile. Turner sfrutta la verticalità del riflesso per connettere la terra al cielo, creando un asse di luce che squarcia l'oscurità londinese. È qui che il concetto di <strong>Sublime</strong> di Edmund Burke prende forma: la bellezza che genera terrore, la grandezza che ci fa sentire infinitamente piccoli.</p>
+        </div>
+
+        <blockquote>"La luce è il mio Dio; l'oscurità è la mia sfida."</blockquote>
+
+        <h2>Il Testimone Muto</h2>
+        <div class="detail-block">
+            <span class="detail-title">III. L'Ombra dell'Umanità</span>
+            <img src="conti_popolo.jpg" alt="Dettaglio del popolo">
+            <p>Sulla sponda opposta, le sagome del popolo di Londra appaiono come piccole macchie d'inchiostro. La loro presenza è fondamentale: servono da scala metrica per la tragedia. La loro impotenza è la nostra. Turner ci ricorda che, nonostante le conquiste tecnologiche e politiche dell'era industriale, l'uomo resta un osservatore fragile davanti ai cicli primordiali di creazione e distruzione. Le barche, simili a Caronte che traghetta le anime, aggiungono una dimensione mitologica a un evento contemporaneo.</p>
+        </div>
+
+        <section class="technical-analysis">
+            <strong>Analisi Storica:</strong> L'incendio di Westminster fu causato dalla distruzione incosciente di vecchie "tally sticks" fiscali nelle caldaie del Parlamento. Turner coglie l'ironia suprema: la burocrazia umana che, per errore, distrugge il proprio tempio più sacro.
+        </section>
+
+        <div class="footer-nav">
+            <a href="index.html" class="btn-back">Torna all'Archivio Generale</a>
+        </div>
+    </main>
+
+</body>
+</html>
