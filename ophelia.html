@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ophelia — Dentro il Quadro</title>
+    <style>
+        :root {
+            --bg-color: #0d0d0d;
+            --card-bg: #161616;
+            --text-color: #e0e0e0;
+            --accent-color: #c5a059;
+            --border-color: #2a2a2a;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 680px;
+            width: 100%;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-family: Georgia, serif;
+            color: var(--accent-color);
+            font-size: 2.2rem;
+            margin: 0 0 10px 0;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            font-size: 0.95rem;
+            color: #a0a0a0;
+            font-style: italic;
+        }
+
+        .main-image-container {
+            width: 100%;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+
+        .main-image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .intro-box {
+            background-color: var(--card-bg);
+            border-left: 3px solid var(--accent-color);
+            padding: 18px;
+            margin-bottom: 30px;
+            border-radius: 0 8px 8px 0;
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #d1d1d1;
+        }
+
+        .section-title {
+            font-family: Georgia, serif;
+            color: var(--accent-color);
+            font-size: 1.4rem;
+            margin: 35px 0 20px 0;
+            text-align: center;
+        }
+
+        .detail-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 25px;
+        }
+
+        .detail-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .detail-content {
+            padding: 20px;
+        }
+
+        .detail-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: var(--accent-color);
+            margin-bottom: 10px;
+        }
+
+        .detail-content p {
+            margin: 0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #cccccc;
+        }
+
+        .nav-button {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 14px 0;
+            background-color: transparent;
+            color: var(--accent-color);
+            border: 1px solid var(--accent-color);
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 40px;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.8rem;
+            color: #666;
+            padding: 20px 0;
+            border-top: 1px solid var(--border-color);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>OPHELIA</h1>
+            <div class="subtitle">John Everett Millais (1851-1852) — Tate Britain, Londra</div>
+        </header>
+
+        <div class="main-image-container">
+            <img src="ophelia_full.JPG" alt="Ophelia di John Everett Millais">
+        </div>
+
+        <div class="intro-box">
+            "Ophelia smette di lottare contro la corrente e si fonde per sempre con la natura. Un capolavoro nato dalla sofferenza reale della modella Elizabeth Siddal e dall'ossessione botanica dei Preraffaelliti."
+        </div>
+
+        <div class="section-title">Analisi dei Dettagli</div>
+
+        <!-- Dettaglio 1: Il Volto e la Vasca -->
+        <div class="detail-card">
+            <img src="ophelia_volto.jpg" alt="Dettaglio volto Ophelia">
+            <div class="detail-content">
+                <div class="detail-title">1. Il Volto e la Sofferenza di Elizabeth Siddal</div>
+                <p>La musa preraffaellita Elizabeth Siddal posò per mesi immersa in una vasca da bagno riscaldata solo da piccole candele sottostanti. Quando le luci si spensero, rimase immobile nell'acqua gelata per non disturbare il pittore, ammalandosi gravemente di polmonite.</p>
+            </div>
+        </div>
+
+        <!-- Dettaglio 2: Il Simbolismo dei Fiori -->
+        <div class="detail-card">
+            <img src="ophelia_fiori.jpg" alt="Dettaglio fiori nell'acqua">
+            <div class="detail-content">
+                <div class="detail-title">2. Il Codice Segreto dei Fiori</div>
+                <p>Ogni singola pianta dipinta segue un preciso simbolismo vittoriano: i papaveri rossi rappresentano il sonno eterno e la morte, le margherite simboleggiano l'innocenza perduta, mentre i salici piangenti e le ortiche raccontano il dolore dell'amore abbandonato.</p>
+            </div>
+        </div>
+
+        <!-- Dettaglio 3: L'Iperrealismo Botanico -->
+        <div class="detail-card">
+            <img src="ophelia_natura.jpg" alt="Dettaglio vegetazione fiume">
+            <div class="detail-content">
+                <div class="detail-title">3. 5 Mesi lungo il Fiume Hogsmill</div>
+                <p>Millais dipinse lo sfondo naturale lavorando all'aperto per 11 ore al giorno, sei giorni a settimana, per cinque mesi consecutivi. La precisione botanica fu così straordinaria che i botanici dell'epoca riuscirono a identificare con esattezza ogni singola specie vegetale.</p>
+            </div>
+        </div>
+
+        <a href="index.html" class="nav-button">← Torna alla Galleria</a>
+
+        <footer>
+            © Dentro il Quadro — Oltre la cornice: un viaggio nell'arte
+        </footer>
+    </div>
+
+</body>
+</html>
