@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narciso — Caravaggio | Dentro il Quadro</title>
+    <style>
+        :root {
+            --bg-color: #0a0a0a;
+            --card-bg: #141414;
+            --text-color: #e0e0e0;
+            --text-muted: #a0a0a0;
+            --accent-color: #c5a059;
+            --border-color: #262626;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.7;
+            padding: 24px 16px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 720px;
+            width: 100%;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 0 20px 0;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 32px;
+        }
+
+        .artist-tag {
+            color: var(--accent-color);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        h1 {
+            font-family: Georgia, serif;
+            color: #ffffff;
+            font-size: 2.4rem;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+        }
+
+        .meta-info {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        .main-image-container {
+            width: 100%;
+            margin-bottom: 32px;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+        }
+
+        .main-image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .quote-box {
+            background-color: var(--card-bg);
+            border-left: 4px solid var(--accent-color);
+            padding: 20px;
+            margin-bottom: 36px;
+            border-radius: 0 8px 8px 0;
+            font-size: 1.05rem;
+            font-style: italic;
+            color: #f0f0f0;
+        }
+
+        .section {
+            margin-bottom: 36px;
+        }
+
+        .section-title {
+            font-family: Georgia, serif;
+            color: var(--accent-color);
+            font-size: 1.4rem;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .content-card {
+            background-color: var(--card-bg);
+            padding: 22px;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 16px;
+            font-size: 0.98rem;
+            color: #d8d8d8;
+        }
+
+        .content-card h3 {
+            color: #ffffff;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            font-family: Georgia, serif;
+        }
+
+        ul.details-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul.details-list li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 12px;
+        }
+
+        ul.details-list li::before {
+            content: "•";
+            color: var(--accent-color);
+            font-weight: bold;
+            font-size: 1.2rem;
+            position: absolute;
+            left: 0;
+            top: -2px;
+        }
+
+        .nav-button {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 16px 0;
+            background-color: transparent;
+            color: var(--accent-color);
+            border: 1px solid var(--accent-color);
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 48px;
+            margin-bottom: 32px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background-color: var(--accent-color);
+            color: #000;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            padding: 24px 0;
+            border-top: 1px solid var(--border-color);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="artist-tag">Michelangelo Merisi da Caravaggio</div>
+            <h1>NARCISO</h1>
+            <div class="meta-info">1597-1599 circa — Olio su tela (112 × 92 cm) — Galleria Nazionale d'Arte Antica, Palazzo Barberini, Roma</div>
+        </header>
+
+        <div class="main-image-container">
+            <img src="narciso_full.JPG" alt="Narciso di Caravaggio">
+        </div>
+
+        <div class="quote-box">
+            "Spera in ciò che non esiste, scambia per un corpo un'ombra. Si incanta da sé, senza saperlo, e amando si brama." 
+            <br><span style="font-size: 0.85rem; color: var(--accent-color); font-style: normal; display: block; margin-top: 8px;">— Ovidio, Le Metamorfosi (Libro III)</span>
+        </div>
+
+        <!-- SEZIONE CONTESTO -->
+        <div class="section">
+            <div class="section-title">L'Opera e il Contesto</div>
+            <div class="content-card">
+                <p>Attribuito a Caravaggio nel 1913 dal grande storico dell'arte Roberto Longhi, il <i>Narciso</i> rappresenta uno dei momenti più intimi e psicologici della prima maturità del pittore lombardo. Realizzato durante il soggiorno romano presso il Cardinale Del Monte, il quadro reinterpreta il celebre mito ovidiano spogliandolo di ogni elemento decorativo classico e immergendolo in una profonda oscurità teatrale.</p>
+            </div>
+        </div>
+
+        <!-- SEZIONE ANALISI COMPOSITIVA -->
+        <div class="section">
+            <div class="section-title">Analisi Iconografica e Composizione</div>
+            
+            <div class="content-card">
+                <h3>1. La Struttura a "A mezza figura / Carta da gioco"</h3>
+                <p>Caravaggio costruisce una composizione geometrica rigorosa: la tela è divisa esattamente a metà orizzontalmente. La figura reale in alto e il suo riflesso speculare in basso formano uno schema rettangolare continuo, un cerchio chiuso che simboleggia l'incapacità del protagonista di uscire dal proprio egoismo.</p>
+            </div>
+
+            <div class="content-card">
+                <h3>2. La Luce e la Tenebra</h3>
+                <p>Non c’è un paesaggio bucolico né la fonte d'acqua limpida descritta dai poeti classici. Lo sfondo è un buio pesto e impenetrabile. La luce drammatica colpisce le ampie maniche a sbuffo, il ginocchio nudo e il volto assorto, isolando Narciso dal resto dell'universo.</p>
+            </div>
+
+            <div class="content-card">
+                <h3>3. Il Gesto del Contatto</h3>
+                <p>Particolare fondamentale è la mano sinistra affondata nell'acqua: nel momento esatto in cui cerca di toccare l'immagine amata, la superficie dell'acqua si increspa e l'illusione svanisce. È la resa dei conti tra l'inganno dei sensi e la tragica realtà.</p>
+            </div>
+        </div>
+
+        <!-- SEZIONE SIMBOLI E CURIOSITÀ -->
+        <div class="section">
+            <div class="section-title">Dettagli e Curiosità</div>
+            <div class="content-card">
+                <ul class="details-list">
+                    <li><strong>L'Abbigliamento del '600:</strong> Narciso non è vestito come un eroe della Grecia antica, ma indossa un elegante giubbetto di seta broccata tipico della gioventù romana della fine del Cinquecento.</li>
+                    <li><strong>La paternità dell'opera:</strong> L'attribuzione a Caravaggio è stata a lungo dibattuta tra i critici, divisa tra chi lo riteneva opera del Merisi e chi di Spadarino o Orazio Gentileschi, prima che le analisi diagnostiche confermassero i tratti tipici della tecnica caravaggesca.</li>
+                    <li><strong>Il tema dell'Innamoramento:</strong> Il dipinto non racconta la vanità frivola, ma la tragedia della solitudine e dell'autoinganno psicologico.</li>
+                </ul>
+            </div>
+        </div>
+
+        <a href="index.html" class="nav-button">← Torna alla Galleria</a>
+
+        <footer>
+            © Dentro il Quadro — Archivio di Approfondimento Storico-Artistico
+        </footer>
+    </div>
+
+</body>
+</html>
