@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Coniugi Arnolfini | Dentro il Quadro</title>
+    <style>
+        :root {
+            --bg-color: #0c0c0c;
+            --text-primary: #f0f0f0;
+            --text-secondary: #a0a0a0;
+            --accent-gold: #c5a059;
+            --border-color: #222;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            padding: 2rem 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 2rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: var(--accent-gold);
+            text-decoration: none;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 300;
+            letter-spacing: -0.5px;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            font-style: italic;
+        }
+
+        .artwork-container {
+            width: 100%;
+            margin-bottom: 2.5rem;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .artwork-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            background: #141414;
+            padding: 1.5rem;
+            border-radius: 6px;
+            margin-bottom: 3rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .meta-item span {
+            display: block;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.3rem;
+        }
+
+        .meta-item strong {
+            font-size: 1.05rem;
+            color: var(--text-primary);
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: var(--accent-gold);
+            margin-bottom: 1rem;
+            letter-spacing: 0.5px;
+            border-left: 3px solid var(--accent-gold);
+            padding-left: 0.75rem;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            color: #d0d0d0;
+            font-size: 1.05rem;
+        }
+
+        .highlight-box {
+            background: rgba(197, 160, 89, 0.05);
+            border: 1px solid rgba(197, 160, 89, 0.2);
+            padding: 1.5rem;
+            border-radius: 6px;
+            margin: 2rem 0;
+        }
+
+        footer {
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+            padding-top: 2rem;
+            margin-top: 4rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="back-link">← Torna alla Galleria</a>
+        <h1>I Coniugi Arnolfini</h1>
+        <div class="subtitle">Jan van Eyck, 1434</div>
+    </header>
+
+    <main>
+        <div class="artwork-container">
+            <img src="arnolfini.JPG" alt="I Coniugi Arnolfini di Jan van Eyck">
+        </div>
+
+        <div class="meta-grid">
+            <div class="meta-item">
+               <span>Autore</span>
+               <strong>Jan van Eyck</strong>
+            </div>
+            <div class="meta-item">
+               <span>Data</span>
+               <strong>1434</strong>
+            </div>
+            <div class="meta-item">
+               <span>Tecnica</span>
+               <strong>Olio su tavola</strong>
+            </div>
+            <div class="meta-item">
+               <span>Ubicazione</span>
+               <strong>National Gallery, Londra</strong>
+            </div>
+        </div>
+
+        <section>
+            <h2>L'Opera e il Mistero</h2>
+            <p>Olio su tavola datato 1434, <em>I Coniugi Arnolfini</em> è considerato uno dei capolavori assoluti dell'arte fiamminga e della pittura occidentale. Il dipinto raffigura il mercante lucchese Giovanni di Nicolao Arnolfini e la sua consorte in un ricco interno domestico, ma la vera natura della scena ha fatto scorrere fiumi di inchiostro tra gli storici dell'arte: è un ritratto di fidanzamento, un documento di matrimonio o un memoriale funebre?</p>
+        </section>
+
+        <section>
+            <h2>Il Dettaglio Invisibile: Lo Specchio e la Firma</h2>
+            <p>Il cuore concettuale dell'opera risiede nella parete di fondo. Uno specchio convesso sferico riflette non solo i due sposi di spalle, ma apre la vista sull'intera stanza e su due figure che varcano la soglia. Tra di loro c'è l'autore stesso del dipinto.</p>
+
+            <div class="artwork-container">
+                <img src="arnolfini-dettaglio.jpg" alt="Dettaglio dello specchio e della firma di Jan van Eyck">
+            </div>
+            
+            <div class="highlight-box">
+                <p><strong>La firma sfacciata:</strong> Subito sopra lo specchio, in un elegante corsivo calligrafico, Jan van Eyck non appone una semplice firma accademica, ma lascia un'iscrizione inequivocabile: <em>"Johannes de eyck fuit hic 1434"</em> (Jan van Eyck fu qui). Una sorta di testimonianza oculare ante litteram, degna di un moderno reportage.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Simbolismo e Luce</h2>
+            <p>Ogni oggetto nella stanza è carico di un profondo significato simbolico, reso immortale dalla tecnica prodigiosa della pittura a olio fiamminga, capace di modulare la luce che filtra dalla finestra laterale riflettendosi sui metalli, sul legno e sulle vesti pesanti dei protagonisti con un realismo ottico mai visto prima.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Dentro il Quadro — Digital Gallery Experience</p>
+    </footer>
+
+</body>
+</html>
