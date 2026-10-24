@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las Meninas | Dentro il Quadro</title>
+    <style>
+        :root {
+            --bg-color: #0c0c0c;
+            --text-primary: #f0f0f0;
+            --text-secondary: #a0a0a0;
+            --accent-gold: #c5a059;
+            --border-color: #222;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            padding: 2rem 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 2rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: var(--accent-gold);
+            text-decoration: none;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 300;
+            letter-spacing: -0.5px;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            font-style: italic;
+        }
+
+        .artwork-container {
+            width: 100%;
+            margin-bottom: 2.5rem;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .artwork-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            background: #141414;
+            padding: 1.5rem;
+            border-radius: 6px;
+            margin-bottom: 3rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .meta-item span {
+            display: block;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.3rem;
+        }
+
+        .meta-item strong {
+            font-size: 1.05rem;
+            color: var(--text-primary);
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: var(--accent-gold);
+            margin-bottom: 1rem;
+            letter-spacing: 0.5px;
+            border-left: 3px solid var(--accent-gold);
+            padding-left: 0.75rem;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            color: #d0d0d0;
+            font-size: 1.05rem;
+        }
+
+        .highlight-box {
+            background: rgba(197, 160, 89, 0.05);
+            border: 1px solid rgba(197, 160, 89, 0.2);
+            padding: 1.5rem;
+            border-radius: 6px;
+            margin: 2rem 0;
+        }
+
+        .highlight-box h3 {
+            color: var(--accent-gold);
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            font-weight: 400;
+        }
+
+        footer {
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+            padding-top: 2rem;
+            margin-top: 4rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="back-link">← Torna alla Galleria</a>
+        <h1>Las Meninas</h1>
+        <div class="subtitle">Diego Velázquez, 1656</div>
+    </header>
+
+    <main>
+        <div class="artwork-container">
+            <img src="las-meninas.JPG" alt="Las Meninas di Diego Velázquez">
+        </div>
+
+        <div class="meta-grid">
+            <div class="meta-item">
+                <span>Autore</span>
+                <strong>Diego Velázquez</strong>
+            </div>
+            <div class="meta-item">
+                <span>Data</span>
+                <strong>1656</strong>
+            </div>
+            <div class="meta-item">
+                <span>Tecnica</span>
+                <strong>Olio su tela</strong>
+            </div>
+            <div class="meta-item">
+                <span>Ubicazione</span>
+                <strong>Museo del Prado, Madrid</strong>
+            </div>
+        </div>
+
+        <section>
+            <h2>L'Opera e la Scena</h2>
+            <p>Dipinto nel 1656 nel Real Alcázar di Madrid, <em>Las Meninas</em> ("Le Damigelle d'onore") è considerato il vertice assoluto dell'arte barocca spagnola e una delle opere più influenti dell'intera pittura occidentale. All'apparenza, la tela rappresenta una scena di vita quotidiana all'interno della corte di re Filippo IV di Spagna: al centro svetta la piccola infanta Margherita Teresa, di soli cinque anni, circondata dal suo seguito personale.</p>
+            <p>Accanto alla principessa troviamo due damigelle d'onore (Doña Isabel de Velasco e Doña María Agustina Sarmiento, che le offre da bere da un piccolo vaso di terracotta), i due nani di corte (Mari Bárbola e Nicolás Pertusato, intenti a stuzzicare un grosso mastino addormentato), una dama di compagnia in abito da lutto e una guardia del corpo. Sullo sfondo, sulla soglia della porta illuminata, appare la silhouette di José Nieto, il maresciallo di palazzo.</p>
+        </section>
+
+        <section>
+            <h2>Il Grande Inganno Prospettico</h2>
+            <p>Ciò che trasforma questo dipinto in un rompicapo intellettuale è la presenza di Diego Velázquez stesso, raffigurato a sinistra con la tavolozza e i pennelli in mano, ritratto di fronte a una tela monumentale di cui vediamo soltanto il telaio posteriore. Il pittore non sta guardando ciò che dipinge sulla tela, ma fissa direttamente noi che stiamo osservando l'opera.</p>
+            <p>Questo crea un cortocircuito visivo unico: qual è il vero soggetto del quadro su cui Velázquez sta lavorando?</p>
+
+            <div class="highlight-box">
+                <h3>Il Mistero dello Specchio</h3>
+                <p>La risposta risiede nello specchio appeso sulla parete di fondo, proprio al centro della composizione. All'interno della sua cornice riflettente compaiono due volti: il Re Filippo IV e sua moglie Marianna d'Austria.</p>
+                <p>Lo specchio svela che i sovrani si trovano esattamente nello stesso punto spaziale occupato da noi che guardiamo il quadro. Velázquez sta quindi dipingendo il ritratto dei Reali che stanno posando di fronte a lui, mentre l'infanta e il suo seguito sono entrati nella stanza per assistere alla seduta.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Filosofia e Sovversione dell'Arte</h2>
+            <p>Con <em>Las Meninas</em>, Velázquez compie una rivoluzione senza precedenti: abbatte la quarta parete e trasforma lo spettatore da semplice osservatore passivo a protagonista attivo dell'opera. Venendo collocati nella posizione occupata dai sovrani di Spagna, chi guarda il dipinto diventa il punto focale attorno a cui ruotano tutti gli sguardi dei personaggi.</p>
+            <p>Non a caso, filosofi come Michel Foucault e storici dell'arte di ogni epoca hanno definito quest'opera come "la teologia della pittura": un'osservazione sulla natura stessa della rappresentazione, sulla percezione visiva e sulla figura dell'artista all'interno della società dell'epoca.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Dentro il Quadro — Galleria Digitale</p>
+    </footer>
+
+</body>
+</html>
