@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Ninfee | Dentro il Quadro</title>
+    <style>
+        :root {
+            --bg-color: #0c0c0c;
+            --text-primary: #f0f0f0;
+            --text-secondary: #a0a0a0;
+            --accent-gold: #c5a059;
+            --border-color: #222;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            padding: 2rem 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 2rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: var(--accent-gold);
+            text-decoration: none;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 300;
+            letter-spacing: -0.5px;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            font-style: italic;
+        }
+
+        .artwork-container {
+            width: 100%;
+            margin-bottom: 2.5rem;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .artwork-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            background: #141414;
+            padding: 1.5rem;
+            border-radius: 6px;
+            margin-bottom: 3rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .meta-item span {
+            display: block;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.3rem;
+        }
+
+        .meta-item strong {
+            font-size: 1.05rem;
+            color: var(--text-primary);
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: var(--accent-gold);
+            margin-bottom: 1rem;
+            letter-spacing: 0.5px;
+            border-left: 3px solid var(--accent-gold);
+            padding-left: 0.75rem;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            color: #d0d0d0;
+            font-size: 1.05rem;
+        }
+
+        .highlight-box {
+            background: rgba(197, 160, 89, 0.05);
+            border: 1px solid rgba(197, 160, 89, 0.2);
+            padding: 1.5rem;
+            border-radius: 6px;
+            margin: 2rem 0;
+        }
+
+        .highlight-box h3 {
+            color: var(--accent-gold);
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            font-weight: 400;
+        }
+
+        .reflection-box {
+            background: linear-gradient(145deg, #141414, #0f0f0f);
+            border: 1px solid var(--accent-gold);
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .reflection-box h3 {
+            color: var(--accent-gold);
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-gold {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, #c5a059, #9e7d3b);
+            color: #0c0c0c;
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 0.7rem 1.3rem;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: all 0.25s ease;
+            box-shadow: 0 4px 15px rgba(197, 160, 89, 0.2);
+        }
+
+        .btn-gold:hover {
+            background: linear-gradient(135deg, #d4b06a, #b08d48);
+            transform: translateX(-3px);
+            box-shadow: 0 6px 20px rgba(197, 160, 89, 0.35);
+        }
+
+        footer {
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+            padding-top: 2rem;
+            margin-top: 4rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="back-link">← Torna alla Galleria</a>
+        <h1>Le Ninfee</h1>
+        <div class="subtitle">Claude Monet, 1914–1917</div>
+    </header>
+
+    <main>
+        <div class="artwork-container">
+            <img src="monet-ninfee.JPG" alt="Le Ninfee di Claude Monet">
+        </div>
+
+        <div class="meta-grid">
+            <div class="meta-item">
+                <span>Autore</span>
+                <strong>Claude Monet</strong>
+            </div>
+            <div class="meta-item">
+                <span>Periodo</span>
+                <strong>1914 – 1917 ca.</strong>
+            </div>
+            <div class="meta-item">
+                <span>Tecnica</span>
+                <strong>Olio su tela</strong>
+            </div>
+            <div class="meta-item">
+                <span>Ubicazione</span>
+                <strong>Museo dell'Orangerie, Parigi</strong>
+            </div>
+        </div>
+
+        <section>
+            <h2>Il Giardino di Giverny e l'Ossessione della Luce</h2>
+            <p>Nel 1883 Claude Monet si stabilisce a Giverny, in Normandia, dove crea il celebre giardino che diventerà il fulcro della sua produzione artistica nella seconda metà della vita. Affascinato dai giochi di luce sull'acqua, fa realizzare un ponte giapponese e uno stagno colmo di ninfee esotiche.</p>
+            <p>Negli ultimi trent'anni della sua esistenza, nonostante l'avanzare della cataratta, Monet trasforma lo stagno nel suo unico universo pittorico, dipingendo centinaia di tele dedicate alle <em>Nymphéas</em>. Non si tratta più di riprodurre la realtà botanica, ma di catturare l'atmosfera perenne del cambiamento atmosferico riflessa sulla superficie liquida.</p>
+        </section>
+
+        <section>
+            <h2>La Dissoluzione della Forma e dello Spazio</h2>
+            <p>Nelle grandi tele delle <em>Ninfee</em>, Monet compie una radicale rivoluzione visiva che anticipa l'astrattismo. Scompare l'orizzonte: non c'è più distinzione tra il cielo e l'acqua, tra l'alto e il basso. Lo spettatore è letteralmente immerso nello stagno, circondato da una superficie liquida in cui i fiori di loto e i riflessi dei salici piangenti fluttuano senza punti di riferimento spaziali.</p>
+
+            <div class="highlight-box">
+                <h3>La Pennellata Monetiana</h3>
+                <p>Viste da vicino, le tele di Monet sembrano un caos materico di pennellate rapide, strati di colore sovrapposti e apparenti macchie slegate. Tuttavia, indietreggiando di pochi passi, l'occhio umano compie la magia: le tessere di colore si fondono, restituendo una profondità e una vibrazione luminosa straordinaria.</p>
+            </div>
+        </section>
+
+        <!-- Sezione Emozionale / Personale -->
+        <section class="reflection-box">
+            <h3>Cosa ti trasmette quest'opera?</h3>
+            <p style="font-style: italic; color: #d0d0d0; margin-bottom: 1rem;">
+                "Guardare le Ninfee di Monet non significa soltanto osservare una tela, ma lasciarsi avvolgere da un silenzio visivo."
+            </p>
+            <p style="font-size: 0.95rem; color: #a0a0a0; margin-bottom: 0;">
+                Davanti a questo specchio d'acqua, ciascuno di noi legge le proprie emozioni: c'è chi ritrova una quiete assoluta e chi avverte una sottile malinconia legata al tempo che scorre. E tu, che emozione provi lasciandoti catturare da questi colori?
+            </p>
+        </section>
+
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="index.html" class="btn-gold">
+                ← Torna alla Galleria
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Dentro il Quadro — Galleria Digitale</p>
+    </footer>
+
+</body>
+</html>
